@@ -6,7 +6,7 @@ if "fielder_data" not in st.session_state:
     st.session_state.fielder_data = pd.DataFrame(columns=["Who", "No of Balls", "where", "Active"])
 
 # --- Header ---
-st.title("📋 Fielding Position Tracker")
+st.title("Fielding Position Tracker")
 
 # --- Fielders Performance Metrics ---
 with st.expander("General Fielders Performance"):
