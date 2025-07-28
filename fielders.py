@@ -14,7 +14,7 @@ if "fielder_data" not in st.session_state:
 st.header("Fielder Summaries")
 
 # --- Fielders Performance Metrics ---
-with st.expander("Fielders"):
+with st.expander("Fielders (Click on the drop down)"):
     runs_saved = st.number_input("Runs Saved", min_value=0, step=1)
     runs_given_away = st.number_input("Runs Given Away", min_value=0, step=1)
     drop_catches = st.number_input("Drop Catches", min_value=0, step=1)
@@ -31,7 +31,7 @@ col2.metric("Extras", extras, border=True)
 col3.metric("Run Scored on extra ball", run_scored_on_extra_ball, border=True)
 
 # --- Fielder Position Errors ---
-with st.expander("Fielders in wrong Position"):
+with st.expander("Fielders in wrong Position  (Click on the drop down)"):
 
     who = st.text_input("Who?")
     noofballs = st.number_input("Number of Balls", min_value=0, step=1)
