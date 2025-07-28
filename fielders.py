@@ -11,7 +11,7 @@ if "fielder_data" not in st.session_state:
     st.session_state.fielder_data = pd.DataFrame(columns=["Who", "No of Balls", "where"])
 
 # --- Header ---
-st.header("Over Summaries")
+st.header("Fielder Summaries")
 
 # --- Fielders Performance Metrics ---
 with st.expander("Fielders"):
@@ -52,7 +52,7 @@ with st.expander("Fielders in wrong Position"):
 # --- Display Over Summary Table ---
 if not st.session_state.fielder_data.empty:
     over_df = st.session_state.fielder_data.sort_values("Who")
-    st.subheader("Over Summary Table")
+    st.subheader("Fielder Summary Table")
     st.dataframe(over_df, use_container_width=True)
 
     # --- Download Options ---
