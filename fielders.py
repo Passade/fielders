@@ -64,6 +64,6 @@ if not st.session_state.fielder_data.empty:
         
 
 # --- Clear Session State (Optional Reset Button) ---
-if st.button("Clear Data"):
+if st.button("Clear Data for Fielders in wrong position"):
     st.session_state.fielder_data = pd.DataFrame(columns=["Who", "No of Balls", "where"])
     st.success("All data cleared.")
